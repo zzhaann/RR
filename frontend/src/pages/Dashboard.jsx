@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */ import React from 'react' /* eslint-enable no-unused-vars */
 import { useSelector } from 'react-redux'
+import MemoryGame from "../components/MemoryGame/MemoryGame.jsx";
 
 /*game*/
 const Dashboard = () => {
@@ -9,8 +10,8 @@ const Dashboard = () => {
 
     return (
         <div>
-            <h1>Salamaleikum, {userInfo.first_name} </h1>
-
+            <h1>Hello, {userInfo.first_name } </h1>
+            <MemoryGame />
         </div>
 
     )
