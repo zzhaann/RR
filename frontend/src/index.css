@@ -11,20 +11,16 @@
   text-decoration: none;
 }
 
+
 :root {
   --color-bg:  #28284f;
   --color-bg-variant: #28284f;
   --color-primary: #007bff;
-  /* Blue */
   --color-primary-variant: #0056b3;
-  /* Darker Blue */
   --color-accent: #ff4500;
-  /* Orange-Red */
   --color-accent-variant: #cc3700;
-  /* Darker Orange-Red */
   --color-white: #fff;
   --color-light: #f8f8f8;
-  /* Light Gray */
 
   --transition: all 400ms ease;
 
@@ -176,7 +172,7 @@ img {
   font-size: 3rem;
   color: var(--color-primary);
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 2rem;
 
   @media screen and (min-width: 1200px) {
     font-size: 5rem;
@@ -185,12 +181,22 @@ img {
 
 }
 
+.main__text{
+  font-size: 20px;
+}
+.home-page__container{
+ background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: -20px;
+}
+
 .home__buttons {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  margin-top: 20rem;
+  margin-top: 10rem;
 
   @media screen and (min-width: 1200px) {
     .btn {
@@ -198,15 +204,13 @@ img {
     }
 
     gap: 7rem;
-    margin-top: 15rem;
+    margin-top: 5rem;
   }
 }
 
 
 
 /* ============ NAV ============ */
-
-
 /* Base styles for the navigation bar */
 .navbar {
   display: flex;
@@ -217,25 +221,41 @@ img {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--color-primary);
   text-decoration: none;
 }
 
+.logo-img {
+  height: 100px;
+  width: auto;
+  margin-right: 470px; /* Добавьте отступ справа */
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.logo-img:hover {
+  opacity: 0.8;
+}
+
+.logo-text {
+  font-size: 50px;
+  font-weight: bold;
+  color: white; /* Цвет текста */
+}
+
 .nav-links {
   display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-childs {
   margin-right: 1rem;
-}
-
-.nav-links .nav-childs:last-child {
-  margin-right: 0;
-}
-
-.nav-childs {
   text-decoration: none;
   color: var(--color-white);
   padding: 0.5rem 1rem;
@@ -243,12 +263,15 @@ img {
   transition: var(--transition);
 }
 
+.nav-links .nav-childs:last-child {
+  margin-right: 0;
+}
+
 .nav-childs:hover,
 .nav-childs:focus {
   background-color: var(--color-primary);
   color: var(--color-white);
 }
-
 
 /* ============ Auth pages (Login, Register, Reset) ============ */
 
@@ -359,3 +382,82 @@ img {
   }
 }
 
+/*===============Dashword===========================*/
+
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 5px;
+  margin-top: 2rem;
+  padding-left: 100px;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  color: var(--color-white);
+  transition: transform 0.3s ease;
+  max-width: 200px;
+  width: 100%;
+  margin: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img {
+  width: 100px;
+  height: 150px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-variant);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.first-card {
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: 10px;
+
+}
+
+.Dashboard__text{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}

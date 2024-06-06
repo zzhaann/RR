@@ -10,6 +10,8 @@ import ResetPasswordPage from "./pages/ResetPasswordPage"
 import ResetPasswordPageConfirm from "./pages/ResetPasswordPageConfirm";
 import ActivatePage from "./pages/ActivatePage";
 import NotFoundPage from "./pages/NotFoundPage";
+import TicTacToePage from "./pages/TicTacToePage.jsx";
+import MemoryGamePage from "./pages/MemoryGamePage.jsx";
 
 function App() {
   return (
@@ -24,6 +26,9 @@ function App() {
           <Route path="/reset-password" element={<ResetPasswordPage />} />
           <Route path="/password/reset/confirm/:uid/:token" element={<ResetPasswordPageConfirm />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/" exact component={Dashboard} />
+          <Route path="/tic-tac-toe" element={<TicTacToePage />} />
+          <Route path="/memory-game" element={<MemoryGamePage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Router>

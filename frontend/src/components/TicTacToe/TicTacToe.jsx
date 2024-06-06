@@ -14,7 +14,7 @@ const TicTacToe = () => {
         if (lock) {
             return 0;
         }
-        if (data[num] === "") { // Check if the box is already filled
+        if (data[num] === "") {
             if (count % 2 === 0) {
                 e.target.innerHTML = `<img src=${cross_icon} alt="cross" class="icon">`;
                 data[num] = "x";

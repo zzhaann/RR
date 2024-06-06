@@ -4,7 +4,12 @@ function App() {
   return (
     <>
       <div className="container home-page__container">
-        <h1 className="main__title">TITLE</h1>
+        <h1 className="main__title">Capybara Games</h1>
+          <p className="main__text">
+           <p>Where you can play and unwind like a capybara!</p>
+           <p> Dive into our collection of soothing games designed to bring you the same calm and joy </p>
+            <p> as capybara in its serene habitat. Embrace the tranquility and have fun!</p>
+          </p>
         <div className="home__buttons">
           <Link to="/login" className="btn btn-secondary">Login</Link>
           <Link to="/register" className="btn btn-primary">Sign up</Link>

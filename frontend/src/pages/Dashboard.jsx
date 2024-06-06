@@ -1,21 +1,37 @@
-/* eslint-disable no-unused-vars */ import React from 'react' /* eslint-enable no-unused-vars */
-import { useSelector } from 'react-redux'
-import TicTacToe from "../components/TicTacToe/TicTacToe.jsx";
-//import MemoryGame from "../components/MemoryGame/MemoryGame.jsx";
+import React from 'react';
+import { useSelector } from 'react-redux';
+import GameCard from '../components/GameCard';
 
-/*game*/
 const Dashboard = () => {
-
-    const { userInfo } = useSelector((state) => state.auth)
-
 
     return (
         <div>
-            <h1>Hello, {userInfo.first_name } </h1>
-            <TicTacToe />
+            <p className="Dashboard__text">Here you can play some mini games with Capybara, I hope you enjoy!</p>
+            <div className="card-grid">
+                <GameCard
+                    title="Memory Game"
+                    imageUrl="/images/cover.jpg"
+                    link="/memory-game"
+                    className="first-card"
+                />
+                <GameCard
+                    title="Tic Tac Toe"
+                    imageUrl="/images/cover.jpg"
+                    link="/tic-tac-toe"
+                />
+                <GameCard
+                    title="example"
+                    imageUrl="/images/cover.jpg"
+                    link="/example"
+                />
+                <GameCard
+                    title="Puzzle"
+                    imageUrl="/images/cover.jpg"
+                    link="/puzzle"
+                />
+            </div>
         </div>
+    );
+};
 
-    )
-}
-
-export default Dashboard
+export default Dashboard;
