@@ -9,14 +9,15 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+
 }
 
 
 :root {
-  --color-bg:  #28284f;
-  --color-bg-variant: #28284f;
-  --color-primary: #007bff;
-  --color-primary-variant: #0056b3;
+  --color-bg: #c5ffaf; /*background*/
+  --color-bg-variant: rgba(0, 0, 0, 0.18); /*register*/
+  --color-primary: rgba(0, 0, 0);;
+  --color-primary-variant: black;
   --color-accent: #ff4500;
   --color-accent-variant: #cc3700;
   --color-white: #fff;
@@ -182,8 +183,9 @@ img {
 }
 
 .main__text{
-  font-size: 20px;
+  font-size: 25px;
 }
+
 .home-page__container{
  background-color: rgba(0, 0, 0, 0.2);
   padding: 20px;
@@ -230,9 +232,9 @@ img {
 }
 
 .logo-img {
-  height: 100px;
+  height: 90px;
   width: auto;
-  margin-right: 470px; /* Добавьте отступ справа */
+  margin-right: 470px;
   cursor: pointer;
   transition: var(--transition);
 }
@@ -244,7 +246,7 @@ img {
 .logo-text {
   font-size: 50px;
   font-weight: bold;
-  color: white; /* Цвет текста */
+  color: black;
 }
 
 .nav-links {
@@ -382,30 +384,33 @@ img {
   }
 }
 
-/*===============Dashword===========================*/
 
 
-.card-grid {
+
+/*===============Dashbaord===========================*/
+
+
+.ccard-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 5px;
   margin-top: 2rem;
-  padding-left: 100px;
+  padding-left: 170px;
 }
 
 .card {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0.63);
   padding: 10px;
   border-radius: 8px;
   text-align: center;
-  color: var(--color-white);
+  color: black;
   transition: transform 0.3s ease;
-  max-width: 200px;
-  width: 100%;
+  width: 300px;
   margin: 2px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 2px solid #000000;
 }
 
 .card:hover {
@@ -413,8 +418,8 @@ img {
 }
 
 .card-img {
-  width: 100px;
-  height: 150px;
+  width: 100%;
+  height: 230px;
   border-radius: 8px;
   margin-bottom: 10px;
 }
@@ -457,7 +462,8 @@ img {
 }
 
 .Dashboard__text{
-  color: white;
+  color: black;
   text-align: center;
   font-size: 30px;
+
 }

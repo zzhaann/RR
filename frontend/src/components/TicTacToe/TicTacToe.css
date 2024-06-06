@@ -1,9 +1,9 @@
-.container{
+.containerr{
     text-align: center;
 }
 .title{
     margin-top: 50px;
-    color: white;
+    color: black;
     font-size: 40px;
     display: flex;
     justify-content: center;
@@ -11,7 +11,7 @@
 }
 
 .title span{
-    color: #26ffcb;
+    color: rgba(0, 0, 0);
     padding-left: 15px;
 }
 
@@ -25,26 +25,26 @@
     background: #1f3540;
     font-size: 26px;
     color: #26ffcb;
-    margin-top: 25px;
+    margin-top: -25px;
     margin-bottom: 50px;
 }
 
-.boxes{
+.boxess{
     display: flex;
     height: 180px;
     width: 180px;
     background: #1f3540;
     border: 4px solid #0f1b21;
-    border-radius: 12px;
+    border-radius: 8px;
     cursor: pointer;
 }
-.board{
+.boardd{
     height: 600px;
     width: 564px;
     display: flex;
     margin: auto;
 }
-.boxes img{
+.boxess img{
     margin: 50px;
 }
 

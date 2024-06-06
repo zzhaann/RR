@@ -66,23 +66,23 @@ const TicTacToe = () => {
     };
 
     return (
-        <div className='container'>
+        <div className='containerr'>
             <h1 className="title" ref={titleRef}>Tic Tac Toe Game with <span>Capybara</span></h1>
-            <div className="board">
+            <div className="boardd">
                 <div className="row1">
-                    <div className="boxes" onClick={(e) => toggle(e, 0)}></div>
-                    <div className="boxes" onClick={(e) => toggle(e, 1)}></div>
-                    <div className="boxes" onClick={(e) => toggle(e, 2)}></div>
+                    <div className="boxess" onClick={(e) => toggle(e, 0)}></div>
+                    <div className="boxess" onClick={(e) => toggle(e, 1)}></div>
+                    <div className="boxess" onClick={(e) => toggle(e, 2)}></div>
                 </div>
                 <div className="row2">
-                    <div className="boxes" onClick={(e) => toggle(e, 3)}></div>
-                    <div className="boxes" onClick={(e) => toggle(e, 4)}></div>
-                    <div className="boxes" onClick={(e) => toggle(e, 5)}></div>
+                    <div className="boxess" onClick={(e) => toggle(e, 3)}></div>
+                    <div className="boxess" onClick={(e) => toggle(e, 4)}></div>
+                    <div className="boxess" onClick={(e) => toggle(e, 5)}></div>
                 </div>
                 <div className="row3">
-                    <div className="boxes" onClick={(e) => toggle(e, 6)}></div>
-                    <div className="boxes" onClick={(e) => toggle(e, 7)}></div>
-                    <div className="boxes" onClick={(e) => toggle(e, 8)}></div>
+                    <div className="boxess" onClick={(e) => toggle(e, 6)}></div>
+                    <div className="boxess" onClick={(e) => toggle(e, 7)}></div>
+                    <div className="boxess" onClick={(e) => toggle(e, 8)}></div>
                 </div>
             </div>
             <button className="reset" onClick={resetGame}>Reset</button>

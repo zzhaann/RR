@@ -72,9 +72,9 @@ function MemoryGame()  {
   },[])
 
   return (
-    <div style={styles.MemoryGame}>
+    <div className="Magic">
       <h1>Magic Match</h1>
-      <button onClick={shuffleCards} style={styles.button}>
+      <button className="mb" onClick={shuffleCards} style={styles.button}>
         New Game
       </button>
 
@@ -95,14 +95,9 @@ function MemoryGame()  {
 };
 
 const styles = {
-  MemoryGame: {
-    maxWidth: "860px",
-    margin: "40px auto",
-    textAlign: "center",
-  },
-  button: {
+  mb: {
     backgroundColor: "none",
-    color: "black",
+    color: "white",
     border: "2px solid #fff",
     padding: "6px 12px",
     borderRadius: "4px",

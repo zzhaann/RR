@@ -12,6 +12,8 @@ import ActivatePage from "./pages/ActivatePage";
 import NotFoundPage from "./pages/NotFoundPage";
 import TicTacToePage from "./pages/TicTacToePage.jsx";
 import MemoryGamePage from "./pages/MemoryGamePage.jsx";
+import PuzzlePage from "./pages/PuzzlePage.jsx";
+
 
 function App() {
   return (
@@ -29,6 +31,7 @@ function App() {
           <Route path="/" exact component={Dashboard} />
           <Route path="/tic-tac-toe" element={<TicTacToePage />} />
           <Route path="/memory-game" element={<MemoryGamePage />} />
+          <Route path="/puzzle-game" element={<PuzzlePage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Router>

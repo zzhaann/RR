@@ -1,14 +1,14 @@
-.card{
+.carddd{
     position: relative;
 }
-.card img{
+.carddd img{
     width: 100%;
     display: block;
     border:2px solid #fff;
     border-radius: 6px;
 }
 
-.card .front {
+.carddd .front {
   transform: rotateY(90deg);
   transition: all ease-in 0.2s;
   position: absolute;
@@ -20,11 +20,28 @@
 }
 
 /* back of card - cover */
-.card .back {
+.carddd .back {
   transition: all ease-in 0.2s;
   transition-delay: 0.2s;
 }
 .flipped .back {
   transform: rotateY(90deg);
   transition-delay: 0s;
+}
+
+.Magic {
+    max-width: 860px;
+    margin: 40px auto;
+    text-align: center;
+    color: black;
+}
+.mb {
+    background-color: black;
+    color:white;
+    border: 2px black #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size:  1em;
+    font-family:  Poppins, sans-serif;
 }
